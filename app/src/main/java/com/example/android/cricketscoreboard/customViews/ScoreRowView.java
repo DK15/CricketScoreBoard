@@ -38,6 +38,10 @@ public class ScoreRowView extends LinearLayout {
         // inflate the layout xml file
         inflate(context, R.layout.score_row_view_layout, this);
 
+        primaryTextView = (TextView) findViewById(R.id.primary_text);
+        secondaryTextView = (TextView) findViewById(R.id.secondary_text);
+
+
         if (attrs != null) {
             TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.ScoreRowView, 0, 0);
 
@@ -51,12 +55,11 @@ public class ScoreRowView extends LinearLayout {
                 attributeArray.recycle();
             }
 
-            primaryTextView = (TextView) findViewById(R.id.primary_text);
+
             if (!TextUtils.isEmpty(primaryText)) {
                 primaryTextView.setText(primaryText);
             }
 
-            secondaryTextView = (TextView) findViewById(R.id.secondary_text);
             if (!TextUtils.isEmpty(secondaryText)) {
                 secondaryTextView.setText(secondaryText);
             }
@@ -70,7 +73,7 @@ public class ScoreRowView extends LinearLayout {
         primaryTextView.setText(text);
     }
 
-    public void setSecondaryTextView(String text) {
+    public void setSecondaryText(String text) {
         secondaryTextView.setText(text);
     }
 
