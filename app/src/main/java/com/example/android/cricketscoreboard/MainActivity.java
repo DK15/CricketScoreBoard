@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
       //  String displayFirstGuy = firstGuyName.getText().toString();
       //  firstPlayer.setText(displayFirstGuy);
 
