@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/team_selection_margins"
+    android:orientation="vertical"
+    tools:context="com.example.android.cricketscoreboard.teamselection.TeamSelectionView"
+    android:background="@color/paper">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/create_new_team_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="@dimen/create_new_team_button_height"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@animator/card_view_clickable_animation">
+
+        <TextView
+            android:id="@+id/create_new_team_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="@dimen/create_new_team_button_height"
+            android:gravity="center"
+            android:text="@string/team_selection_create_team"
+            android:textSize="@dimen/create_new_tew_team_text_size" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/create_new_team_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/create_new_team_content_spacing"
+        android:height="@dimen/create_new_team_button_height"
+        android:gravity="center"
+        app:contentPadding="@dimen/team_selection_margins">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_team_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/team_selection_margins"
+                android:layout_marginTop="@dimen/team_selection_margins" />
+
+            <ListView
+                android:id="@+id/team_selection_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/error_no_teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+

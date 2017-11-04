@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Cricket Score Board</string>
     <string name="start_demo_button">Start Demo!</string>
+    <string name="start_updated_version_button">Updated Preview :O</string>
+    <string name="team_selection_create_team">CREATE TEAM</string>
+    <string name="choose_team_title">Choose team from the list</string>
+    <string name="choose_team_title_no_teams">There are no teams</string>
+    <string name="team_creation_create_team">CREATE TEAM</string>
 </resources>

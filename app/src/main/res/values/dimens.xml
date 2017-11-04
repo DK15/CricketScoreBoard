@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="team_selection_margins">16dp</dimen>
+    <dimen name="create_new_team_button_height">36dp</dimen>
+    <dimen name="create_new_tew_team_text_size">14sp</dimen>
+    <dimen name="team_image_width">54dp</dimen>
+    <dimen name="team_image_margin">16dp</dimen>
+    <dimen name="create_new_team_content_spacing">4dp</dimen>
+    <dimen name="team_creation_button_margin">8dp</dimen>
+    <dimen name="team_creation_edit_text_margin">16dp</dimen>
+</resources>

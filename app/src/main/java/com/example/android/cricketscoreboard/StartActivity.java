@@ -8,12 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.android.cricketscoreboard.teamselection.TeamSelectionView;
+
 public class StartActivity extends AppCompatActivity {
     EditText firstGuyName;
     EditText secondGuyName;
     EditText teamName;
 
     private Button startDemoButton;
+    private Button updatedVersionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,18 @@ public class StartActivity extends AppCompatActivity {
         secondGuyName = (EditText) findViewById(R.id.bat2EditView);
 
         startDemoButton = (Button) findViewById(R.id.start_demo_button);
+        updatedVersionButton = (Button) findViewById(R.id.start_updated_version_button);
+
+        View.OnClickListener updatedClicklistener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, TeamSelectionView.class);
+                startActivity(intent);
+                Toast.makeText(StartActivity.this, "Starting updated version...", Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        updatedVersionButton.setOnClickListener(updatedClicklistener);
 
         View.OnClickListener clickListener = new View.OnClickListener() {
             @Override
