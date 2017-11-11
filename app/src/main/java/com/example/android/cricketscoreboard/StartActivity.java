@@ -59,16 +59,3 @@ public class StartActivity extends AppCompatActivity {
     }
 }
 
- //   }
-
-/*
-    public void startGame(View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("teamname",teamName.getText().toString());
-        intent.putExtra("batsman1",firstGuyName.getText().toString());
-        intent.putExtra("batsman2", secondGuyName.getText().toString());
-        startActivity(intent);
-    }
-*/
-
-//}
