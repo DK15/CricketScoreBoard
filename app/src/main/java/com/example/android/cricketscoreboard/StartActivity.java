@@ -12,9 +12,12 @@ public class StartActivity extends AppCompatActivity {
     EditText firstGuyName;
     EditText secondGuyName;
     EditText teamName;
-    Button startButton;
+//    Button startButton;
 
     private Button startDemoButton;
+
+    Button startButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,24 @@ public class StartActivity extends AppCompatActivity {
         };
 
         startDemoButton.setOnClickListener(clickListener);
+
+        // set onclick listener on start button view
+        startButton = (Button) findViewById(R.id.startBtn);
+
+        startButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MainActivity.class);
+                intent.putExtra("teamname",teamName.getText().toString());
+                intent.putExtra("batsman1",firstGuyName.getText().toString());
+                intent.putExtra("batsman2", secondGuyName.getText().toString());
+                startActivity(intent);
+                }
+
+        });
+
+
 
         // set onclick listener on start button view
         startButton = (Button) findViewById(R.id.startBtn);
