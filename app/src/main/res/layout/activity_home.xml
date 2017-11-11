@@ -54,7 +54,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="100dp"
             android:layout_marginLeft="30dp"
-            android:onClick="startGame"/>
+            />
 
     <Button
             android:id="@+id/start_demo_button"
