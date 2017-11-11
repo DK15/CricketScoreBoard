@@ -56,24 +56,6 @@ public class StartActivity extends AppCompatActivity {
 
         });
 
-
-
-        // set onclick listener on start button view
-        startButton = (Button) findViewById(R.id.startBtn);
-
-        startButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainActivity.class);
-                intent.putExtra("teamname",teamName.getText().toString());
-                intent.putExtra("batsman1",firstGuyName.getText().toString());
-                intent.putExtra("batsman2", secondGuyName.getText().toString());
-                startActivity(intent);
-                }
-
-        });
-
     }
 }
 
